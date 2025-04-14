@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Flags by OmHackz</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#"><i class="fas fa-rocket"></i> Fast Flags</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link"><i class="fas fa-list-check"></i> Features</a></li>
+                <li class="nav-item"><a href="#installation" class="nav-link"><i class="fas fa-download"></i> Installation</a></li>
+                <li class="nav-item"><a href="#flags" class="nav-link"><i class="fas fa-code"></i> Fast Flags</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🚀 Fast Flags by OmHackz</h1>
+                <p>Boost your Roblox FPS and smooth out your gameplay with the best fast flags, hand-tuned by <strong>OmHackz</strong>.</p>
+                <p class="subtitle">Perfect for low-end PCs, laptops, or anyone trying to squeeze more performance out of Roblox.</p>
+                <div class="cta-buttons">
+                    <a href="#installation" class="btn primary"><i class="fas fa-download"></i> Get Started</a>
+                    <a href="#flags" class="btn secondary"><i class="fas fa-code"></i> View Flags</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/image.png" alt="Roblox Performance">
+            </div>
+        </div>
+    </section>
+
+    <!-- What Are Fast Flags Section -->
+    <section class="what-are">
+        <div class="container">
+            <h2>🔧 What Are Fast Flags?</h2>
+            <p>Fast Flags (also called FFlags) are hidden Roblox settings that control how the client behaves.</p>
+            <div class="benefits">
+                <div class="benefit-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Reduce Lag</h3>
+                    <p>Optimize client performance to minimize lag during gameplay.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Improve Frame Rates</h3>
+                    <p>Boost your FPS for smoother, more responsive gameplay.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-spinner"></i>
+                    <h3>Turn Off Unnecessary Visuals</h3>
+                    <p>Disable resource-heavy visual effects for better performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>📦 Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Works on <strong>Official Roblox Client</strong> and <strong>Bloxstrap</strong></p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-flask"></i>
+                    <p>Tested for <strong>maximum FPS gain</strong></p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-laptop"></i>
+                    <p>Designed for <strong>low-end and mid-end PCs</strong></p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <p>Safe to use (no cheating, just optimization)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2>⚙️ How to Use</h2>
+            
+            <div class="method">
+                <h3><i class="fas fa-folder"></i> Method 1: ClientSettings (Manual)</h3>
+                <ol class="steps">
+                    <li>Open this folder: <code>C:\Users\&lt;YourName&gt;\AppData\Local\Roblox\Versions\&lt;latest_version&gt;\ClientSettings</code></li>
+                    <li>If <code>ClientSettings</code> doesn't exist, create it.</li>
+                    <li>Inside it, create a file named: <code>ClientAppSettings.json</code></li>
+                    <li>Paste the fast flags from this repo into the file.</li>
+                    <li>Save the file and start Roblox.</li>
+                </ol>
+            </div>
+            
+            <div class="method recommended">
+                <h3><i class="fas fa-rocket"></i> Method 2: Bloxstrap (Recommended)</h3>
+                <ol class="steps">
+                    <li>Open <strong>Bloxstrap</strong></li>
+                    <li>Go to <strong>Settings → Fast Flags</strong></li>
+                    <li>Enable <strong>Fast Flag Overrides</strong></li>
+                    <li>Paste the flags into the editor</li>
+                    <li>Save and launch Roblox through Bloxstrap</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fast Flags Section -->
+    <section id="flags" class="flags">
+        <div class="container">
+            <h2>📄 Fast Flags JSON</h2>
+            <div class="code-container">
+                <pre><code class="json">{
+  "FFlagHumanoidOnlySetCollisionsOnStateChangeDefaultIsEnabled": "False",
+  "FFlagHumanoidParallelFasterSetCollision": "True",
+  "DFIntNewRunningBaseGravityReductionFactorHundredth": "1500",
+  "DFIntMaxAltitudePDStickHipHeightPercent": "0",
+  "DFIntSolidFloorPercentForceApplication": "100",
+  "FFlagDebugAdornsDisabled": "False",
+  "DFIntNonSolidFloorPercentForceApplication": "100",
+  "FFlagDebugSkyGray": "False",
+  "FFlagDebugDontRenderUI": "False",
+  "FFlagEnableCommandAutocomplete": "False",
+  "FFlagEnableBubbleChatFromChatService": "False",
+  "FFlagCoreGuiTypeSelfViewPresent": "False",
+  "FIntFullscreenTitleBarTriggerDelayMillis": "100",
+  "FIntFontSizePadding": "1",
+  "FFlagTrackerLodControllerDebugUI": "False",
+  "FFlagSoundsUsePhysicalVelocity": "True",
+  "FFlagAdServiceEnabled": "False",
+  "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+  "FFlagDebugDisableTelemetryEphemeralStat": "True",
+  "FFlagDebugDisableTelemetryEventIngest": "True",
+  "FFlagDebugDisableTelemetryPoint": "True",
+  "FFlagDebugDisableTelemetryV2Counter": "True",
+  "FFlagDebugDisableTelemetryV2Event": "True",
+  "FFlagDebugDisableTelemetryV2Stat": "True",
+  "DFIntTaskSchedulerTargetFps": "9999",
+  "FIntScrollWheelDeltaAmount": "100",
+  "DFIntMaxActiveAnimationTracks": "256",
+  "FLogNetwork": "0",
+  "FFlagHandleAltEnterFullscreenManually": "False",
+  "FFlagDebugDisplayFPS": "True"
+}</code></pre>
+                <button class="copy-btn" id="copyBtn"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>Have questions or need help? Reach out to OmHackz:</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-discord"></i> Discord</a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-rocket"></i> Fast Flags by OmHackz
+                </div>
+                <p class="copyright">© 2023 OmHackz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
